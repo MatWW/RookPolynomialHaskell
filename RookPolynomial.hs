@@ -60,7 +60,7 @@ convertToEquation (x:xs) powerExponent = show x ++ "*x^" ++ show powerExponent +
 
 main :: IO()
 main = do
-    putStrLn "Podaj nazwę pliku z szachownicą."
+    putStrLn "Provide a filepath for file with a chessboard."
     file <- getLine
     board <- readFile file
     let parsedBoard = parseBoard board
